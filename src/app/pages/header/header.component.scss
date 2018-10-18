@@ -1,0 +1,19 @@
+.navbar-dark {
+    background-color: transparent;
+}
+.navbar {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+}
+.navbar-header {
+    .navbar-brand {
+        color: black;
+        padding: 0;
+        margin-left: 16px;
+        img {
+            display: inline;
+        }
+    }
+}
