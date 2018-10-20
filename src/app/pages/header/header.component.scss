@@ -1,19 +1,83 @@
 .navbar-dark {
     background-color: transparent;
+    transition: 0.5s ease-in-out;
 }
 .navbar {
     max-width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
-    margin: 0;
+    margin: 0;  
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: #FFF;
+                transition: 0.4s ease-out;
+                &:hover {
+                    background: transparent;
+                    cursor: pointer;
+                }
+                @media screen and (max-width:500px) {
+                    color: black;
+                }
+            }
+        }
+        @media screen and (max-width:500px) {
+            background: white;
+        }
+    }
+    .active {
+        border-bottom: 2px solid #d73a8a !important;
+    }
 }
 .navbar-header {
+    .navbar-toggle {
+        border: 1px solid white;
+        transition: 0.5s ease-out;
+        .icon-bar {
+            border: 1px solid white;
+        }
+    }
     .navbar-brand {
-        color: black;
+        color: #FFF;
         padding: 0;
         margin-left: 16px;
+        font-size: 25px;
         img {
             display: inline;
+        }
+    }
+}
+.bg-light {
+    background: white;
+    color: black;
+    box-shadow: 2px 2px 15px 2px #0000001f;
+    transition: 0.5s ease-in;
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: black !important;
+                    padding: 10px 11px;
+                    transition: 0.5s ease-in;
+                    &:hover {
+                        background: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .active {
+            border-bottom: 2px solid #d73a8a !important;
+        }
+    .navbar-header {
+        .navbar-toggle {
+            border: 1px solid black;
+            transition: 0.5s ease-in;
+            .icon-bar {
+                border: 1px solid black;
+            }
+        }
+        .navbar-brand {
+            color: black;
         }
     }
 }

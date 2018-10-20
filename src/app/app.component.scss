@@ -1,0 +1,43 @@
+.main-content {
+    #basic-canvas {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+    }
+    .header {
+        position: relative;
+        width: 100%;
+        float: left;
+        height: 80px;
+        z-index: 1030   ;
+    }
+    .inner-body {
+        position: relative;
+        height: 100vh;
+        .banner-area {
+            width: 100%;
+            float: left;
+            .inner-banner-content {
+                position: absolute;
+                width: 50%;
+                height: 180px;
+                left: 50%;
+                top: 80px;
+                margin-left: -25%;
+                @media screen {
+                    width: 100%;
+                    left: 25%;
+                }
+            }
+        }
+        .om-os {
+            position: relative;
+        }
+    }
+}
+.om-os {
+    padding: 60px 0 60px 0;
+    position: relative;
+    width: 100%;
+    float: left;
+}

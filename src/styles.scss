@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
 body {
     color: #525252;
     font-family: "Poppins", sans-serif;
@@ -9,6 +12,57 @@ body {
     max-width: 100% !important;
     overflow-x: hidden !important;
 }
+.w-100 {
+  width: 100%;
+}
+.default-color {
+  color: #a03cb3;
+}
+.bg-black {
+  background: #000;
+}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+h1, h2, h3, h4 {
+  color: #FFF;
+}
+.primary-btn {
+  line-height:  2.5rem;
+  padding: 10px 40px;
+  border-radius: 50px;
+  background: transparent;
+  border: 1px solid #f83a72;
+  color: #222222;
+  display: inline-block;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.primary-btn:focus {
+  outline: none;
+}
+
+.primary-btn.banner-btn {
+  color: #fff;
+  margin-top: 1.875rem;
+}
+
+.primary-btn span {
+  margin-left: 15px;
+}
+
+.primary-btn:hover {
+  background: -webkit-linear-gradient(-45deg, #a03cb3, #fa3973);
+  color: #fff !important;
+  box-shadow: 0px 10px 20px 0px rgba(60, 64, 143, 0.2);
+}
 .brand-logo {
   width: 45px;
 }
@@ -17,9 +71,37 @@ ol, ul {
   padding: 0;
   list-style: none;
 }
+.p-5 {
+  padding: 48px;
+}
+.m-3 {
+  margin: 3 !important;
+}
+.mt-5 {
+  margin-top: 36px;
+}
+.py-10 {
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
 .padding-16 {
   padding: 16px;
 }
 .padding-right-16 {
   padding-right: 16px;
+}
+.white {
+  color: white !important;
+}
+.muted {
+  color: lightgray !important
+}
+.carousel-indicators {
+  color: black;
+}
+.w-80 {
+  width: 80px;
+}
+.rounded-circle {
+  border-radius: 50%;
 }

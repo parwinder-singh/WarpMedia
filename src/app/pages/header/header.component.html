@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-md navbar-fixed-top bg-dark padding-16 active navbar-dark">
+<nav class="navbar navbar-expand-md navbar-fixed-top padding-16 active navbar-dark" [class.bg-dark]='!scrolledDown'
+  [class.bg-light]='scrolledDown'>
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -13,23 +14,23 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="nav-item active">
-          <a class="nav-link" href="#home">Forside</a>
+        <li class="nav-item" routerLinkActive='active'>
+          <a class="nav-link" href="#about">Forside</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">Om os</a>
+          <a class="nav-link" href="#om">Om os</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#project">Projekter</a>
+          <a class="nav-link" href="#projekter">Projekter</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#features">Services</a>
+          <a class="nav-link" href="#services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#pricing">Priser</a>
+          <a class="nav-link">Priser</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contect">Kontakt</a>
+          <a class="nav-link">Kontakt</a>
         </li>
       </ul>
     </div>
