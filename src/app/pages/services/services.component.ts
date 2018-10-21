@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-services',
@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./services.component.scss']
 })
 export class ServicesComponent implements OnInit {
-
+  @ViewChild('facebookImage') facebookImage: HTMLImageElement;
   constructor() { }
 
   ngOnInit() {
+  }
+  changeImage(action) {
+    if (action === 'in') {
+      this.facebookImage['nativeElement'].src = 'src/assets/images/Facebookgradient.png';
+    } else {
+      this.facebookImage['nativeElement'].src = 'src/assets/images/Facebook.png';
+    }
   }
 
 }
