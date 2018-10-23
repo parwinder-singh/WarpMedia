@@ -75,6 +75,14 @@ section {
     overflow: hidden;
     .h-727 {
         height: 727px;
+        @media screen and (max-width: 500px) {
+            height: auto;
+        }
+    }
+    .hide-on-mobile {
+        @media screen and (max-width:768px) {
+            display: none;
+        }
     }
     img {
         max-width: 100%;

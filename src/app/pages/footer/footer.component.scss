@@ -5,3 +5,22 @@
         padding: 20px;
     }
 }
+.footer {
+    h2 {
+        .hide-on-mobile {
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+        .on-large-display {
+            margin-top: 10px;
+            @media screen and (min-width: 768px) {
+                display: none;
+            }
+        }
+        .mobile-formatted {
+            font-size: 14px;
+            font-weight: 100;
+        }
+    }
+}

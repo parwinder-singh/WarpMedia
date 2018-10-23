@@ -16,7 +16,6 @@ body {
   color: black;
   &::after {
       content: ' ';
-      /* position: absolute; */
       display: block;
       width: 60px;
       margin: 0.5rem auto;

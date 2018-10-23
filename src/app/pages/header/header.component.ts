@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+declare const $: any;
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -23,5 +24,10 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+    // Making navbar collapse automatically after click
+    $('.nav-link').on('click', function() {
+      $('.navbar-collapse').collapse('hide');
+    });
+    // Collapse ends
   }
 }
