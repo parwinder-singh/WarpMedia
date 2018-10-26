@@ -6,14 +6,12 @@
     }
 }
 .footer {
+    .less-padded-footer {
+        padding: 30px;
+    }
     h2 {
-        .hide-on-mobile {
-            @media screen and (max-width: 768px) {
-                display: none;
-            }
-        }
         .on-large-display {
-            margin-top: 10px;
+            margin-top: 40px;
             @media screen and (min-width: 768px) {
                 display: none;
             }

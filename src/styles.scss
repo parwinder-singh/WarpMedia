@@ -124,3 +124,8 @@ ol, ul {
 .grey-bg {
   background: #f7f7f7 !important;
 }
+.hide-on-mobile {
+  @media screen and (max-width: 768px) {
+      display: none !important;
+  }
+}
