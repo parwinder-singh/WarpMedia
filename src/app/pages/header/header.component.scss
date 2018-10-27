@@ -56,12 +56,15 @@
             .nav-item {
                 .nav-link {
                     color: black !important;
-                    padding: 10px 11px;
+                    margin-right: -4px;
                     transition: 0.5s ease-in;
                     &:hover {
                         background: white;
                         cursor: pointer;
                     }
+                  @media screen and (max-width: 500px){
+                    margin-right: 0;
+                  }
                 }
             }
         }
