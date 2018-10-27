@@ -24,6 +24,10 @@
                 left: 50%;
                 top: 50%;
                 margin-left: -25%;
+              .rocket {
+                position: absolute;
+                right: 0;
+              }
                 @media screen {
                     width: 100%;
                     left: 25%;
