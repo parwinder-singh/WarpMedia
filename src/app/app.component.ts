@@ -13,6 +13,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   ngOnInit() {
   }
   ngAfterViewInit() {
+    // Changing gradient colors using Granim js library.
     const granimInstance = new Granim({
       element: '#basic-canvas',
       name: 'basic-gradient',

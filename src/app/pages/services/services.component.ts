@@ -11,12 +11,5 @@ export class ServicesComponent implements OnInit {
 
   ngOnInit() {
   }
-  changeImage(action) {
-    if (action === 'in') {
-      this.facebookImage['nativeElement'].src = 'src/assets/images/Facebookgradient.png';
-    } else {
-      this.facebookImage['nativeElement'].src = 'src/assets/images/Facebook.png';
-    }
-  }
 
 }
